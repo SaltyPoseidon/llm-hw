@@ -1,0 +1,6 @@
+{
+  "name": "fa2-90",
+  "seconds": 90,
+  "attention": "flash_attention_2",
+  "overrides": {}
+}

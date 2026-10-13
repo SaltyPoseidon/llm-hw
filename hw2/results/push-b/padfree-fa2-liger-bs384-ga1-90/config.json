@@ -1,0 +1,11 @@
+{
+  "name": "padfree-fa2-liger-bs384-ga1-90",
+  "seconds": 90,
+  "attention": "flash_attention_2",
+  "overrides": {
+    "padding_free": true,
+    "use_liger_kernel": true,
+    "per_device_train_batch_size": 384,
+    "gradient_accumulation_steps": 1
+  }
+}

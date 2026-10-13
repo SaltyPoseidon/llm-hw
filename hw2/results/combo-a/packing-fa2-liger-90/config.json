@@ -1,0 +1,9 @@
+{
+  "name": "packing-fa2-liger-90",
+  "seconds": 90,
+  "attention": "flash_attention_2",
+  "overrides": {
+    "packing": true,
+    "use_liger_kernel": true
+  }
+}

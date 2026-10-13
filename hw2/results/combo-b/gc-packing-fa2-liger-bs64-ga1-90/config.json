@@ -1,0 +1,12 @@
+{
+  "name": "gc-packing-fa2-liger-bs64-ga1-90",
+  "seconds": 90,
+  "attention": "flash_attention_2",
+  "overrides": {
+    "packing": true,
+    "use_liger_kernel": true,
+    "gradient_checkpointing": true,
+    "per_device_train_batch_size": 64,
+    "gradient_accumulation_steps": 1
+  }
+}

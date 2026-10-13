@@ -1,0 +1,8 @@
+{
+  "name": "liger-90",
+  "seconds": 90,
+  "attention": "sdpa",
+  "overrides": {
+    "use_liger_kernel": true
+  }
+}

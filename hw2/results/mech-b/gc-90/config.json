@@ -1,0 +1,8 @@
+{
+  "name": "gc-90",
+  "seconds": 90,
+  "attention": "sdpa",
+  "overrides": {
+    "gradient_checkpointing": true
+  }
+}

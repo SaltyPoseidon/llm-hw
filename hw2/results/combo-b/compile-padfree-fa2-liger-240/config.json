@@ -1,0 +1,10 @@
+{
+  "name": "compile-padfree-fa2-liger-240",
+  "seconds": 240,
+  "attention": "flash_attention_2",
+  "overrides": {
+    "padding_free": true,
+    "use_liger_kernel": true,
+    "torch_compile": true
+  }
+}

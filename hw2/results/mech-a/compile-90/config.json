@@ -1,0 +1,8 @@
+{
+  "name": "compile-90",
+  "seconds": 90,
+  "attention": "sdpa",
+  "overrides": {
+    "torch_compile": true
+  }
+}
