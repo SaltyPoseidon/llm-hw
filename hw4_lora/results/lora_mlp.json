@@ -1,0 +1,146 @@
+{
+  "name": "lora_mlp",
+  "config": {
+    "method": "lora",
+    "lr": 0.0002,
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "targets": [
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "trainable_params": 14106624,
+  "total_params": 1557820928,
+  "train_seconds": 403.4681528080255,
+  "peak_memory_gib": 16.669593334197998,
+  "train_loss": [
+    0.3235,
+    0.0665,
+    0.0583,
+    0.0612,
+    0.0404,
+    0.0512,
+    0.054,
+    0.0519,
+    0.0403,
+    0.0517,
+    0.0411,
+    0.0399,
+    0.0356,
+    0.035,
+    0.035,
+    0.0391,
+    0.0409,
+    0.0397,
+    0.0274,
+    0.028,
+    0.0307,
+    0.0298,
+    0.03,
+    0.026,
+    0.0306,
+    0.0328,
+    0.0352,
+    0.0239,
+    0.0271,
+    0.0296,
+    0.0286,
+    0.0288,
+    0.0302,
+    0.0425,
+    0.0297,
+    0.0265,
+    0.029,
+    0.0262,
+    0.0297,
+    0.0237,
+    0.0325,
+    0.0295,
+    0.0262,
+    0.0325,
+    0.0309,
+    0.0294,
+    0.025,
+    0.026,
+    0.0256,
+    0.0299
+  ],
+  "sql_exact_match": 0.815,
+  "sql_valid": 0.978,
+  "samples": [
+    {
+      "question": "When Essendon played away; where did they play?",
+      "context": "CREATE TABLE table_name_50 (venue VARCHAR, away_team VARCHAR)",
+      "answer": "SELECT venue FROM table_name_50 WHERE away_team = \"essendon\"",
+      "output": "SELECT venue FROM table_name_50 WHERE away_team = \"essendon\"",
+      "exact": true
+    },
+    {
+      "question": "What is the lowest numbered game against Phoenix with a record of 29-17?",
+      "context": "CREATE TABLE table_name_61 (game INTEGER, opponent VARCHAR, record VARCHAR)",
+      "answer": "SELECT MIN(game) FROM table_name_61 WHERE opponent = \"phoenix\" AND record = \"29-17\"",
+      "output": "SELECT MIN(game) FROM table_name_61 WHERE opponent = \"phoenix\" AND record = \"29-17\"",
+      "exact": true
+    },
+    {
+      "question": "What is the transfer fee for Gravgaard?",
+      "context": "CREATE TABLE table_name_94 (transfer_fee VARCHAR, type VARCHAR, name VARCHAR)",
+      "answer": "SELECT transfer_fee FROM table_name_94 WHERE type = \"transfer\" AND name = \"gravgaard\"",
+      "output": "SELECT transfer_fee FROM table_name_94 WHERE type = \"transfer\" AND name = \"gravgaard\"",
+      "exact": true
+    },
+    {
+      "question": "How many cup apps for the season where there are more than 10 league goals and 23 league apps?",
+      "context": "CREATE TABLE table_name_17 (cup_apps VARCHAR, league_goals VARCHAR, league_apps VARCHAR)",
+      "answer": "SELECT cup_apps FROM table_name_17 WHERE league_goals > 10 AND league_apps = 23",
+      "output": "SELECT cup_apps FROM table_name_17 WHERE league_goals > 10 AND league_apps = 23",
+      "exact": true
+    },
+    {
+      "question": "Can you tell me the Overall Record that has the Week of 3?",
+      "context": "CREATE TABLE table_name_81 (overall_record VARCHAR, week VARCHAR)",
+      "answer": "SELECT overall_record FROM table_name_81 WHERE week = 3",
+      "output": "SELECT overall_record FROM table_name_81 WHERE week = 3",
+      "exact": true
+    },
+    {
+      "question": "Of all the contestants who got voted, what is the contestant number and name of the contestant who got least votes?",
+      "context": "CREATE TABLE votes (contestant_number VARCHAR); CREATE TABLE contestants (contestant_number VARCHAR, contestant_name VARCHAR)",
+      "answer": "SELECT T1.contestant_number, T1.contestant_name FROM contestants AS T1 JOIN votes AS T2 ON T1.contestant_number = T2.contestant_number GROUP BY T1.contestant_number ORDER BY COUNT(*) LIMIT 1",
+      "output": "SELECT T1.contestant_number, T2.contestant_name FROM contestants AS T1 JOIN votes AS T2 ON T1.contestant_number = T2.contestant_number GROUP BY T1.contestant_number ORDER BY COUNT(*) LIMIT 1",
+      "exact": false
+    },
+    {
+      "question": "Which venue had the result 7-1?",
+      "context": "CREATE TABLE table_name_50 (venue VARCHAR, result VARCHAR)",
+      "answer": "SELECT venue FROM table_name_50 WHERE result = \"7-1\"",
+      "output": "SELECT venue FROM table_name_50 WHERE result = \"7-1\"",
+      "exact": true
+    },
+    {
+      "question": "What did the tournament that got an A in 1945 get in 1949?",
+      "context": "CREATE TABLE table_name_22 (Id VARCHAR)",
+      "answer": "SELECT 1949 FROM table_name_22 WHERE 1945 = \"a\"",
+      "output": "SELECT 1949 FROM table_name_22 WHERE 1945 = \"a\"",
+      "exact": true
+    },
+    {
+      "question": "Find the states where have the colleges whose enrollments are less than the largest size.",
+      "context": "CREATE TABLE college (state VARCHAR, enr INTEGER)",
+      "answer": "SELECT DISTINCT state FROM college WHERE enr < (SELECT MAX(enr) FROM college)",
+      "output": "SELECT state FROM college WHERE enr < (SELECT MAX(enr) FROM college)",
+      "exact": false
+    },
+    {
+      "question": "Which Position has a Competition of world championships, and a Year larger than 1997?",
+      "context": "CREATE TABLE table_name_27 (position VARCHAR, competition VARCHAR, year VARCHAR)",
+      "answer": "SELECT position FROM table_name_27 WHERE competition = \"world championships\" AND year > 1997",
+      "output": "SELECT position FROM table_name_27 WHERE competition = \"world championships\" AND year > 1997",
+      "exact": true
+    }
+  ],
+  "mmlu": 0.554
+}
