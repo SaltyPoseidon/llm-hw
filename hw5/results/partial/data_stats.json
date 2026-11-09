@@ -1,0 +1,39 @@
+{
+  "train": {
+    "dialogues": 10170,
+    "skipped_dialogues": 862,
+    "examples": 11546,
+    "filtered_long": 18,
+    "reference_call_counts": {
+      "0": 2763,
+      "1": 5181,
+      "2": 1477,
+      "3": 1096,
+      "4": 787,
+      "5": 164,
+      "6": 55,
+      "7": 17,
+      "9": 2,
+      "8": 4
+    },
+    "mean_prompt_tokens": 820.7248397713494
+  },
+  "test": {
+    "dialogues": 1130,
+    "skipped_dialogues": 86,
+    "examples": 1242,
+    "filtered_long": 0,
+    "reference_call_counts": {
+      "1": 555,
+      "4": 111,
+      "3": 107,
+      "6": 5,
+      "0": 266,
+      "2": 173,
+      "5": 23,
+      "8": 1,
+      "12": 1
+    },
+    "mean_prompt_tokens": 804.9718196457327
+  }
+}
