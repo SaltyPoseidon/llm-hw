@@ -1,0 +1,11 @@
+{
+  "run": "student_sft",
+  "learning_rate": 2e-05,
+  "epochs": 3,
+  "quality": 0.5352411684782609,
+  "intent_accuracy": 0.72265625,
+  "slot_micro_f1": 0.34782608695652173,
+  "frame_exact_match": 0.265625,
+  "valid_json_rate": 0.96484375,
+  "n": 256
+}

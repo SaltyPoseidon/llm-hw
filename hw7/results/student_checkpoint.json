@@ -1,0 +1,22 @@
+{
+  "run_id": "ac6b6789-8cc8-4365-b25d-e233a76ec0ae",
+  "name": "student_sft",
+  "train_examples": 384,
+  "files": [
+    "added_tokens.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "training_args.bin",
+    "vocab.json"
+  ],
+  "config_sha256": "656bad868bc241a6766666d3bc3b594d26c29ec7d7c230ede92a866d10fa37ff",
+  "quality": 0.5352411684782609,
+  "teacher_quality": 0.5833908458480566,
+  "teacher_fraction": 0.9174658332188911
+}

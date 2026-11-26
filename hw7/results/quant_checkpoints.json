@@ -1,0 +1,130 @@
+{
+  "run_id": "2c17ddaf-6338-4248-835f-89905606a7af",
+  "checkpoints": {
+    "baseline": {
+      "files": [
+        "added_tokens.json",
+        "chat_template.jinja",
+        "config.json",
+        "generation_config.json",
+        "merges.txt",
+        "model.safetensors",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ],
+      "config_sha256": "b4b2534f695648cc7d6fb06cdfb321e3b621759bb6e5bfaaf77b347990d6a4a6",
+      "weights_bytes": 1192135096,
+      "tensor_bytes_by_dtype": {
+        "BF16": 1192099840
+      },
+      "embedding_and_head_bytes": {
+        "model.embed_tokens.weight": 311164928
+      }
+    },
+    "awq_massive": {
+      "files": [
+        "added_tokens.json",
+        "chat_template.jinja",
+        "config.json",
+        "generation_config.json",
+        "merges.txt",
+        "model.safetensors",
+        "recipe.yaml",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ],
+      "config_sha256": "ddc7aa1ca4b209a783a5e81f1be4bf9a06c38ccbb1462f09b47af470faac9691",
+      "weights_bytes": 849624976,
+      "tensor_bytes_by_dtype": {
+        "I64": 3136,
+        "I32": 220200960,
+        "BF16": 629342208
+      },
+      "embedding_and_head_bytes": {
+        "lm_head.weight": 311164928,
+        "model.embed_tokens.weight": 311164928
+      }
+    },
+    "awq_wiki": {
+      "files": [
+        "added_tokens.json",
+        "chat_template.jinja",
+        "config.json",
+        "generation_config.json",
+        "merges.txt",
+        "model.safetensors",
+        "recipe.yaml",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ],
+      "config_sha256": "ddc7aa1ca4b209a783a5e81f1be4bf9a06c38ccbb1462f09b47af470faac9691",
+      "weights_bytes": 849624976,
+      "tensor_bytes_by_dtype": {
+        "I64": 3136,
+        "I32": 220200960,
+        "BF16": 629342208
+      },
+      "embedding_and_head_bytes": {
+        "lm_head.weight": 311164928,
+        "model.embed_tokens.weight": 311164928
+      }
+    },
+    "gptq_massive": {
+      "files": [
+        "added_tokens.json",
+        "chat_template.jinja",
+        "config.json",
+        "generation_config.json",
+        "merges.txt",
+        "model.safetensors",
+        "recipe.yaml",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ],
+      "config_sha256": "a3cb7cd577a946bceb875198d0b024699a11096463f2a263f4c1a8850404d774",
+      "weights_bytes": 849624976,
+      "tensor_bytes_by_dtype": {
+        "I64": 3136,
+        "I32": 220200960,
+        "BF16": 629342208
+      },
+      "embedding_and_head_bytes": {
+        "lm_head.weight": 311164928,
+        "model.embed_tokens.weight": 311164928
+      }
+    },
+    "smoothquant_massive": {
+      "files": [
+        "added_tokens.json",
+        "chat_template.jinja",
+        "config.json",
+        "generation_config.json",
+        "merges.txt",
+        "model.safetensors",
+        "recipe.yaml",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ],
+      "config_sha256": "3e64a23f61eccd332e8b126b74d7a7fe0da43e0856ddfa233045c1358ec726c8",
+      "weights_bytes": 1063608800,
+      "tensor_bytes_by_dtype": {
+        "BF16": 623149056,
+        "I8": 440401920
+      },
+      "embedding_and_head_bytes": {
+        "lm_head.weight": 311164928,
+        "model.embed_tokens.weight": 311164928
+      }
+    }
+  }
+}
